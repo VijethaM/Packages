@@ -1,0 +1,1797 @@
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '18261' and ppm.party_id = '624' and ppm.privilege = 'admin' );'
+[12/Mar/2013:12:29:53][1793.2787834736][-default:212-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '18261' and ppm.party_id = '624' and ppm.privilege = 'admin' )
+        '
+[12/Mar/2013:12:29:53][1793.2787834736][-default:212-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.request-processor-procs.rp_lookup_node_from_host.node_id
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+
+        select node_id 
+	from host_node_map
+	where host = '192.168.99.209';'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+
+        select node_id 
+	from host_node_map
+	where host = '192.168.99.209'
+
+      '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.acs-tcl.tcl.request-processor-procs.rp_lookup_node_from_host.node_id
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: user agent is Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: RP (14 ms): rp_filter: setting up request: GET /intranet-timesheet2-tasks/new return%5furl=%2fintranet%2fprojects%2fview%3fproject%255fid%3d40537&task%5fid=40538
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: OACS= sec_handler: enter
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: ad_get_signed_cookie: Got signed cookie ad_session_id with value 831565,624,1,1363071511, signature 587 0 478F2C47C8E88B0D820792AA4E7BA5E3318FCAE4.
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: __ad_verify_signature: Getting token_id 587, value F9524B0319C2DEB389A6409589B847CAFF5610B7 ; 
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: __ad_verify_signature: Expire_Time is 0 (compare to 1363071606), hash is 478F2C47C8E88B0D820792AA4E7BA5E3318FCAE4
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: __ad_verify_signature: Hash matches - Hash check OK
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: __ad_verify_signature: No expiration time - Expiration OK
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: ad_get_signed_cookie: Verification of cookie ad_session_id OK
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: Security: Insecure session OK: session_id = 831565, untrusted_user_id = 624, auth_level = ok, user_id = 624
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: util_current_location: suppress_port=0, port=8000, Host_port=8000
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '12231' and ppm.party_id = '624' and ppm.privilege = 'read' );'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '12231' and ppm.party_id = '624' and ppm.privilege = 'read' )
+        '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.otype
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.otype --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'select p.project_type_id from im_projects p where p.project_id = '40538';'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select p.project_type_id from im_projects p where p.project_id = '40538''
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.otype
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.project_from_task
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.project_from_task --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'select project_id from im_timesheet_tasks_view where task_id = '40538';'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select project_id from im_timesheet_tasks_view where task_id = '40538''
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.project_from_task
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.project_name
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.project_name --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'select project_name from im_projects where project_id='40537';'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select project_name from im_projects where project_id='40537''
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.project_name
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_cc
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_cc --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'select project_cost_center_id from im_projects where project_id = 40537;'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select project_cost_center_id from im_projects where project_id = 40537'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_cc
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_info
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_info --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+	select	p.company_id,
+		(select	count(*)
+		from	im_category_hierarchy ch 
+		where	p.project_type_id = 76 OR
+			(ch.child_id = p.project_status_id and ch.parent_id = 76)
+		) as project_is_open_p,
+		p.project_status_id,
+		im_category_from_id(p.project_status_id) as project_status
+	from	im_projects p
+	where	p.project_id = 40537;'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	p.company_id,
+		(select	count(*)
+		from	im_category_hierarchy ch 
+		where	p.project_type_id = 76 OR
+			(ch.child_id = p.project_status_id and ch.parent_id = 76)
+		) as project_is_open_p,
+		p.project_status_id,
+		im_category_from_id(p.project_status_id) as project_status
+	from	im_projects p
+	where	p.project_id = 40537
+    '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_info
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.default_cost_center
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.default_cost_center --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+	select material_id
+	from im_timesheet_tasks_view
+	group by material_id
+	order by count(*) DESC
+	limit 1;'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select material_id
+	from im_timesheet_tasks_view
+	group by material_id
+	order by count(*) DESC
+	limit 1
+'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.default_cost_center
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.project_exists
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.project_exists --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+	select	count(*)
+	from	im_projects
+	where	project_id = '40538'
+		and not exists (
+			select	task_id
+			from	im_timesheet_tasks
+			where	task_id = '40538'
+		);'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	count(*)
+	from	im_projects
+	where	project_id = '40538'
+		and not exists (
+			select	task_id
+			from	im_timesheet_tasks
+			where	task_id = '40538'
+		)
+    '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.project_exists
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+	select	category_id
+	from	im_categories c
+	where	c.category_id in (100,0)
+		and (c.enabled_p = 't' OR c.enabled_p is NULL)
+      UNION
+	select	h.child_id
+	from	im_categories c,
+		im_category_hierarchy h
+	where	h.parent_id in (100,0)
+		and h.child_id = c.category_id
+		and (c.enabled_p = 't' OR c.enabled_p is NULL);'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	category_id
+	from	im_categories c
+	where	c.category_id in (100,0)
+		and (c.enabled_p = 't' OR c.enabled_p is NULL)
+      UNION
+	select	h.child_id
+	from	im_categories c,
+		im_category_hierarchy h
+	where	h.parent_id in (100,0)
+		and h.child_id = c.category_id
+		and (c.enabled_p = 't' OR c.enabled_p is NULL)
+    '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.tcl.intranet-timesheet2-tasks-procs.im_timesheet_task_type_options.task_type_options
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.tcl.intranet-timesheet2-tasks-procs.im_timesheet_task_type_options.task_type_options --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+        select	category, category_id
+        from	im_categories
+	where	category_type = 'Intranet Project Type' and
+		category_id in (0) and
+		(enabled_p is null OR enabled_p = 't');'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+        select	category, category_id
+        from	im_categories
+	where	category_type = 'Intranet Project Type' and
+		category_id in (0) and
+		(enabled_p is null OR enabled_p = 't')
+    '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-timesheet2-tasks.tcl.intranet-timesheet2-tasks-procs.im_timesheet_task_type_options.task_type_options
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-category-procs.im_category_from_id.cat
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-category-procs.im_category_from_id.cat --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'select im_category_from_id(100);'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_category_from_id(100)'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-core.tcl.intranet-category-procs.im_category_from_id.cat
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-material.tcl.intranet-material-procs.im_material_options.material_options
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-material.tcl.intranet-material-procs.im_material_options.material_options --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+		select	substring(material_name for '25') as material_name,
+			material_id
+		from	im_materials
+		where 	1=1
+			and material_status_id <> 9102
+		order by
+			material_name;'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select	substring(material_name for '25') as material_name,
+			material_id
+		from	im_materials
+		where 	1=1
+			and material_status_id <> 9102
+		order by
+			material_name
+	    '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-material.tcl.intranet-material-procs.im_material_options.material_options
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.opt
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.opt --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'SELECT 
+                       im_name_from_user_id(user_id) as name, user_id
+            
+        from 
+            acs_rels,users,im_biz_object_members 
+        where 
+            object_id_two=user_id and object_id_one=40537   
+            and acs_rels.rel_id=im_biz_object_members.rel_id;'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'SELECT 
+                       im_name_from_user_id(user_id) as name, user_id
+            
+        from 
+            acs_rels,users,im_biz_object_members 
+        where 
+            object_id_two=user_id and object_id_one=40537   
+            and acs_rels.rel_id=im_biz_object_members.rel_id'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-timesheet2-tasks.www.new.opt
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_company.cost_center_company
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_company.cost_center_company --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying '
+	select	cost_center_id
+	from	im_cost_centers
+	where	cost_center_label = 'company';'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	cost_center_id
+	from	im_cost_centers
+	where	cost_center_label = 'company'
+    '
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_company.cost_center_company
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.ct
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.ct --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'select im_category_from_id('3718');'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_category_from_id('3718')'
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.ct
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.pcent
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.pcent --> using default SQL
+[12/Mar/2013:12:30:06][1793.2788891504][-default:211-] Notice: Querying 'select count(*) from apm_packages where package_key = 'intranet-cost-center';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select count(*) from apm_packages where package_key = 'intranet-cost-center''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 1 seconds nsdb0 0or1row dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.pcent
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.cost_center_options
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.cost_center_options --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+        select	cc.cost_center_name,
+                cc.cost_center_id,
+                cc.cost_center_label,
+    		(length(cc.cost_center_code) / 2) - 1 as indent_level
+        from	im_cost_centers cc
+	where	cost_center_status_id in (
+			select * from im_sub_categories(3101)
+		)
+		
+		
+	order by
+		cc.cost_center_code;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+        select	cc.cost_center_name,
+                cc.cost_center_id,
+                cc.cost_center_label,
+    		(length(cc.cost_center_code) / 2) - 1 as indent_level
+        from	im_cost_centers cc
+	where	cost_center_status_id in (
+			select * from im_sub_categories(3101)
+		)
+		
+		
+	order by
+		cc.cost_center_code
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-cost.tcl.intranet-cost-center-procs.im_cost_center_options.cost_center_options
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-cost.tcl.intranet-cost-procs.im_cost_uom_options.cost_type_options
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-cost.tcl.intranet-cost-procs.im_cost_uom_options.cost_type_options --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+        select	category, category_id
+        from	im_categories
+	where	category_type = 'Intranet UoM' and
+		(enabled_p is null OR enabled_p = 't');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+        select	category, category_id
+        from	im_categories
+	where	category_type = 'Intranet UoM' and
+		(enabled_p is null OR enabled_p = 't')
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-cost.tcl.intranet-cost-procs.im_cost_uom_options.cost_type_options
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.cid
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.cid --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select company_id from im_projects where project_id = '40537';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select company_id from im_projects where project_id = '40537''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.cid
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	category_id
+	from	im_categories c
+	where	c.category_id in (82,0)
+		
+      UNION
+	select	h.child_id
+	from	im_categories c,
+		im_category_hierarchy h
+	where	h.parent_id in (82,0)
+		and h.child_id = c.category_id;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	category_id
+	from	im_categories c
+	where	c.category_id in (82,0)
+		
+      UNION
+	select	h.child_id
+	from	im_categories c,
+		im_category_hierarchy h
+	where	h.parent_id in (82,0)
+		and h.child_id = c.category_id
+		
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	category_id
+	from	im_categories c
+	where	c.category_id in (82,0)
+		and (c.enabled_p = 't' OR c.enabled_p is NULL)
+      UNION
+	select	h.child_id
+	from	im_categories c,
+		im_category_hierarchy h
+	where	h.parent_id in (82,0)
+		and h.child_id = c.category_id
+		and (c.enabled_p = 't' OR c.enabled_p is NULL);'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	category_id
+	from	im_categories c
+	where	c.category_id in (82,0)
+		and (c.enabled_p = 't' OR c.enabled_p is NULL)
+      UNION
+	select	h.child_id
+	from	im_categories c,
+		im_category_hierarchy h
+	where	h.parent_id in (82,0)
+		and h.child_id = c.category_id
+		and (c.enabled_p = 't' OR c.enabled_p is NULL)
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-core.tcl.intranet-category-procs.im_sub_categories.category_trans_closure
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-project-procs.im_project_options.hours_timesheet
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-project-procs.im_project_options.hours_timesheet --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+		select
+			p.project_id,
+			p.parent_id,
+			tree_level(p.tree_sortkey) as tree_level,
+			substring(p.project_name for '50') as project_name_shortened,
+			p.sort_order as sort_order
+		from
+			im_projects p,
+			im_projects main_p,
+			(	select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	1=1
+					 and p.company_id = '35152' and
+					p.project_status_id not in (82)
+			    UNION
+				select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	p.project_id in (0)
+			    UNION
+				select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	p.project_id = '0'
+			    UNION
+				select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	p.project_id in (0)
+			) p_cond,
+			(	select	p.project_id
+				from	im_projects p
+				where	1=1
+					 and p.company_id = '35152' and
+					p.project_status_id not in (82)
+			    UNION
+				select	p.project_id
+				from	im_projects p
+				where	p.project_id = '0'
+			) main_p_cond
+		where
+			p.project_id = p_cond.project_id and
+			main_p.project_id = main_p_cond.project_id and
+			main_p.parent_id is null and
+			tree_ancestor_key(p.tree_sortkey, 1) = main_p.tree_sortkey and
+			main_p.project_status_id not in (82) and
+			p.project_status_id not in (82)
+		order by 
+			lower(main_p.project_name),
+			p.tree_sortkey;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select
+			p.project_id,
+			p.parent_id,
+			tree_level(p.tree_sortkey) as tree_level,
+			substring(p.project_name for '50') as project_name_shortened,
+			p.sort_order as sort_order
+		from
+			im_projects p,
+			im_projects main_p,
+			(	select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	1=1
+					 and p.company_id = '35152' and
+					p.project_status_id not in (82)
+			    UNION
+				select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	p.project_id in (0)
+			    UNION
+				select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	p.project_id = '0'
+			    UNION
+				select	p.project_name,
+					p.project_id
+				from	im_projects p
+				where	p.project_id in (0)
+			) p_cond,
+			(	select	p.project_id
+				from	im_projects p
+				where	1=1
+					 and p.company_id = '35152' and
+					p.project_status_id not in (82)
+			    UNION
+				select	p.project_id
+				from	im_projects p
+				where	p.project_id = '0'
+			) main_p_cond
+		where
+			p.project_id = p_cond.project_id and
+			main_p.project_id = main_p_cond.project_id and
+			main_p.parent_id is null and
+			tree_ancestor_key(p.tree_sortkey, 1) = main_p.tree_sortkey and
+			main_p.project_status_id not in (82) and
+			p.project_status_id not in (82)
+		order by 
+			lower(main_p.project_name),
+			p.tree_sortkey
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-core.tcl.intranet-project-procs.im_project_options.hours_timesheet
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '408' and ppm.party_id = '624' and ppm.privilege = 'add_tasks' );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '408' and ppm.party_id = '624' and ppm.privilege = 'add_tasks' )
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.exists
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.exists --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	count(*)
+	from	im_dynfield_layout_pages
+	where	object_type = 'im_timesheet_task' and page_url = 'default';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	count(*)
+	from	im_dynfield_layout_pages
+	where	object_type = 'im_timesheet_task' and page_url = 'default'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.exists
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attribute_table_map
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attribute_table_map --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+       select	m.attribute_id,
+                m.object_type_id as ot,
+                m.display_mode as dm,
+		m.help_text as ht
+        from
+                im_dynfield_type_attribute_map m,
+                im_dynfield_attributes a,
+                acs_attributes aa
+        where
+                m.attribute_id = a.attribute_id
+                and a.acs_attribute_id = aa.attribute_id
+                and aa.object_type = 'im_timesheet_task'
+    		and also_hard_coded_p = 'f';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+       select	m.attribute_id,
+                m.object_type_id as ot,
+                m.display_mode as dm,
+		m.help_text as ht
+        from
+                im_dynfield_type_attribute_map m,
+                im_dynfield_attributes a,
+                acs_attributes aa
+        where
+                m.attribute_id = a.attribute_id
+                and a.acs_attribute_id = aa.attribute_id
+                and aa.object_type = 'im_timesheet_task'
+    		and also_hard_coded_p = 'f'
+'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attribute_table_map
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.object_type_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.object_type_info --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+        select
+                t.table_name as object_type_table_name,
+                t.id_column as object_type_id_column
+        from
+                acs_object_types t
+        where
+                t.object_type = 'im_timesheet_task';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+        select
+                t.table_name as object_type_table_name,
+                t.id_column as object_type_id_column
+        from
+                acs_object_types t
+        where
+                t.object_type = 'im_timesheet_task'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.object_type_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attributes
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attributes --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select *
+	from (
+		select
+			dl.*,
+			coalesce(dl.pos_y, 10000 + a.attribute_id) as pos_y_coalesce,
+			a.attribute_id,
+			aa.attribute_id as dynfield_attribute_id,
+			a.table_name as attribute_table_name,
+			tt.id_column as attribute_id_column,
+			a.attribute_name,
+			a.pretty_name,
+			a.datatype, 
+			case when a.min_n_values = 0 then 'f' else 't' end as required_p, 
+			a.default_value, 
+			aw.widget,
+			aw.parameters,
+			aw.storage_type_id,
+			im_category_from_id(aw.storage_type_id) as storage_type
+		from
+			im_dynfield_attributes aa
+			LEFT OUTER JOIN	(
+				select	* 
+				from	im_dynfield_layout 
+				where	page_url = 'default'
+			) dl ON (aa.attribute_id = dl.attribute_id),
+			im_dynfield_widgets aw,
+			acs_attributes a 
+			left outer join 
+				acs_object_type_tables tt 
+				on (tt.object_type = 'im_timesheet_task' and tt.table_name = a.table_name)
+		where 
+			a.object_type = 'im_timesheet_task'
+			and a.attribute_id = aa.acs_attribute_id
+			and aa.widget_name = aw.widget_name
+			and 1=1
+			and (also_hard_coded_p is NULL or also_hard_coded_p = 'f')
+		) t
+	order by
+		pos_y_coalesce;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select *
+	from (
+		select
+			dl.*,
+			coalesce(dl.pos_y, 10000 + a.attribute_id) as pos_y_coalesce,
+			a.attribute_id,
+			aa.attribute_id as dynfield_attribute_id,
+			a.table_name as attribute_table_name,
+			tt.id_column as attribute_id_column,
+			a.attribute_name,
+			a.pretty_name,
+			a.datatype, 
+			case when a.min_n_values = 0 then 'f' else 't' end as required_p, 
+			a.default_value, 
+			aw.widget,
+			aw.parameters,
+			aw.storage_type_id,
+			im_category_from_id(aw.storage_type_id) as storage_type
+		from
+			im_dynfield_attributes aa
+			LEFT OUTER JOIN	(
+				select	* 
+				from	im_dynfield_layout 
+				where	page_url = 'default'
+			) dl ON (aa.attribute_id = dl.attribute_id),
+			im_dynfield_widgets aw,
+			acs_attributes a 
+			left outer join 
+				acs_object_type_tables tt 
+				on (tt.object_type = 'im_timesheet_task' and tt.table_name = a.table_name)
+		where 
+			a.object_type = 'im_timesheet_task'
+			and a.attribute_id = aa.acs_attribute_id
+			and aa.widget_name = aw.widget_name
+			and 1=1
+			and (also_hard_coded_p is NULL or also_hard_coded_p = 'f')
+		) t
+	order by
+		pos_y_coalesce
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attributes
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select im_object_permission_p(32147, 624, 'read');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_object_permission_p(32147, 624, 'read')'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select im_object_permission_p(32147, 624, 'write');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_object_permission_p(32147, 624, 'write')'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select im_object_permission_p(32150, 624, 'read');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_object_permission_p(32150, 624, 'read')'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select im_object_permission_p(32150, 624, 'write');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_object_permission_p(32150, 624, 'write')'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select im_object_permission_p(32151, 624, 'read');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_object_permission_p(32151, 624, 'read')'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select im_object_permission_p(32151, 624, 'write');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select im_object_permission_p(32151, 624, 'write')'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-permission-procs.im_object_permission.operm
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attributes
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attributes --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select *
+	from (
+		select
+			dl.*,
+			coalesce(dl.pos_y, 10000 + a.attribute_id) as pos_y_coalesce,
+			a.attribute_id,
+			aa.attribute_id as dynfield_attribute_id,
+			a.table_name as attribute_table_name,
+			tt.id_column as attribute_id_column,
+			a.attribute_name,
+			a.pretty_name,
+			a.datatype, 
+			case when a.min_n_values = 0 then 'f' else 't' end as required_p, 
+			a.default_value, 
+			aw.widget,
+			aw.parameters,
+			aw.storage_type_id,
+			im_category_from_id(aw.storage_type_id) as storage_type
+		from
+			im_dynfield_attributes aa
+			LEFT OUTER JOIN	(
+				select	* 
+				from	im_dynfield_layout 
+				where	page_url = 'default'
+			) dl ON (aa.attribute_id = dl.attribute_id),
+			im_dynfield_widgets aw,
+			acs_attributes a 
+			left outer join 
+				acs_object_type_tables tt 
+				on (tt.object_type = 'im_timesheet_task' and tt.table_name = a.table_name)
+		where 
+			a.object_type = 'im_timesheet_task'
+			and a.attribute_id = aa.acs_attribute_id
+			and aa.widget_name = aw.widget_name
+			and 1=1
+			and (also_hard_coded_p is NULL or also_hard_coded_p = 'f')
+		) t
+	order by
+		pos_y_coalesce;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select *
+	from (
+		select
+			dl.*,
+			coalesce(dl.pos_y, 10000 + a.attribute_id) as pos_y_coalesce,
+			a.attribute_id,
+			aa.attribute_id as dynfield_attribute_id,
+			a.table_name as attribute_table_name,
+			tt.id_column as attribute_id_column,
+			a.attribute_name,
+			a.pretty_name,
+			a.datatype, 
+			case when a.min_n_values = 0 then 'f' else 't' end as required_p, 
+			a.default_value, 
+			aw.widget,
+			aw.parameters,
+			aw.storage_type_id,
+			im_category_from_id(aw.storage_type_id) as storage_type
+		from
+			im_dynfield_attributes aa
+			LEFT OUTER JOIN	(
+				select	* 
+				from	im_dynfield_layout 
+				where	page_url = 'default'
+			) dl ON (aa.attribute_id = dl.attribute_id),
+			im_dynfield_widgets aw,
+			acs_attributes a 
+			left outer join 
+				acs_object_type_tables tt 
+				on (tt.object_type = 'im_timesheet_task' and tt.table_name = a.table_name)
+		where 
+			a.object_type = 'im_timesheet_task'
+			and a.attribute_id = aa.acs_attribute_id
+			and aa.widget_name = aw.widget_name
+			and 1=1
+			and (also_hard_coded_p is NULL or also_hard_coded_p = 'f')
+		) t
+	order by
+		pos_y_coalesce
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-dynfield.tcl.intranet-dynfield-procs.im_dynfield::append_attributes_to_form.attributes
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.default_cost_center
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.default_cost_center --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select department_id from im_employees where employee_id = '624';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select department_id from im_employees where employee_id = '624''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.default_cost_center
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new. --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select t.*, p.parent_id as project_id, p.project_name as task_name, p.project_nr as task_nr, p.percent_completed, p.project_type_id as task_type_id, p.project_status_id as task_status_id, to_char(p.start_date,'YYYY-MM-DD') as start_date, to_char(p.end_date,'YYYY-MM-DD') as end_date, p.reported_hours_cache, p.reported_hours_cache as reported_units_cache, p.note, u.user_id as assignee from im_projects p, im_timesheet_tasks t, acs_rels, users u, im_biz_object_members where t.task_id = '40538' and p.project_id = '40538' and object_id_two=user_id and object_id_one='40538' and acs_rels.rel_id=im_biz_object_members.rel_id LIMIT 1;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select t.*, p.parent_id as project_id, p.project_name as task_name, p.project_nr as task_nr, p.percent_completed, p.project_type_id as task_type_id, p.project_status_id as task_status_id, to_char(p.start_date,'YYYY-MM-DD') as start_date, to_char(p.end_date,'YYYY-MM-DD') as end_date, p.reported_hours_cache, p.reported_hours_cache as reported_units_cache, p.note, u.user_id as assignee from im_projects p, im_timesheet_tasks t, acs_rels, users u, im_biz_object_members where t.task_id = '40538' and p.project_id = '40538' and object_id_two=user_id and object_id_one='40538' and acs_rels.rel_id=im_biz_object_members.rel_id LIMIT 1'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: Security: Getting token_id 589, value E211AD0E80F090031E0E893DEEF4B60BC739D25D
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: new: ad_form: before template::form is_submission
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-timesheet2-tasks.www.new.parent_menu
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-timesheet2-tasks.www.new.parent_menu --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select menu_id from im_menus where label='project';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select menu_id from im_menus where label='project''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 0or1row dbqd.intranet-timesheet2-tasks.www.new.parent_menu
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	*
+	from (
+		select	c.plugin_id,
+			c.plugin_name,
+			c.component_tcl,
+			c.title_tcl,
+			coalesce(m.sort_order, c.sort_order) as sort_order,
+			coalesce(m.location, c.location) as location,
+			im_object_permission_p(c.plugin_id, '624', 'read') as perm
+		from	im_component_plugins c
+			left outer join
+			    (	select	* 
+				from	im_component_plugin_user_map 
+				where	user_id = '624'
+			    ) m
+			    on (c.plugin_id = m.plugin_id)
+		where
+			c.page_url = '/intranet-timesheet2-tasks/new'
+			and (c.enabled_p is null OR c.enabled_p = 't')
+			and (view_name is null or view_name = NULL)
+	    ) p
+	where	
+		location = 'left'
+	order by 
+		sort_order;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	*
+	from (
+		select	c.plugin_id,
+			c.plugin_name,
+			c.component_tcl,
+			c.title_tcl,
+			coalesce(m.sort_order, c.sort_order) as sort_order,
+			coalesce(m.location, c.location) as location,
+			im_object_permission_p(c.plugin_id, '624', 'read') as perm
+		from	im_component_plugins c
+			left outer join
+			    (	select	* 
+				from	im_component_plugin_user_map 
+				where	user_id = '624'
+			    ) m
+			    on (c.plugin_id = m.plugin_id)
+		where
+			c.page_url = '/intranet-timesheet2-tasks/new'
+			and (c.enabled_p is null OR c.enabled_p = 't')
+			and (view_name is null or view_name = NULL)
+	    ) p
+	where	
+		location = 'left'
+	order by 
+		sort_order
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	*
+	from (
+		select	c.plugin_id,
+			c.plugin_name,
+			c.component_tcl,
+			c.title_tcl,
+			coalesce(m.sort_order, c.sort_order) as sort_order,
+			coalesce(m.location, c.location) as location,
+			im_object_permission_p(c.plugin_id, '624', 'read') as perm
+		from	im_component_plugins c
+			left outer join
+			    (	select	* 
+				from	im_component_plugin_user_map 
+				where	user_id = '624'
+			    ) m
+			    on (c.plugin_id = m.plugin_id)
+		where
+			c.page_url = '/intranet-timesheet2-tasks/new'
+			and (c.enabled_p is null OR c.enabled_p = 't')
+			and (view_name is null or view_name = NULL)
+	    ) p
+	where	
+		location = 'right'
+	order by 
+		sort_order;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	*
+	from (
+		select	c.plugin_id,
+			c.plugin_name,
+			c.component_tcl,
+			c.title_tcl,
+			coalesce(m.sort_order, c.sort_order) as sort_order,
+			coalesce(m.location, c.location) as location,
+			im_object_permission_p(c.plugin_id, '624', 'read') as perm
+		from	im_component_plugins c
+			left outer join
+			    (	select	* 
+				from	im_component_plugin_user_map 
+				where	user_id = '624'
+			    ) m
+			    on (c.plugin_id = m.plugin_id)
+		where
+			c.page_url = '/intranet-timesheet2-tasks/new'
+			and (c.enabled_p is null OR c.enabled_p = 't')
+			and (view_name is null or view_name = NULL)
+	    ) p
+	where	
+		location = 'right'
+	order by 
+		sort_order
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_project_folder_id_not_cached.select_folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_project_folder_id_not_cached.select_folder_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+    	select object_id_two 
+	    from acs_rels 
+        where object_id_one = '40538'
+        and rel_type = 'project_folder'
+        order by object_id_two asc
+        limit 1;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+    	select object_id_two 
+	    from acs_rels 
+        where object_id_one = '40538'
+        and rel_type = 'project_folder'
+        order by object_id_two asc
+        limit 1   
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_project_folder_id_not_cached.select_folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.parent_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.parent_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select parent_id from im_projects where project_id='40538';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select parent_id from im_projects where project_id='40538''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.parent_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.get_folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.get_folder_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying ' select object_id_two from acs_rels where object_id_one = '40537' and rel_type = 'project_folder';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): ' select object_id_two from acs_rels where object_id_one = '40537' and rel_type = 'project_folder''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.get_folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.parent_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.parent_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select parent_id from im_projects where project_id='40537';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select parent_id from im_projects where project_id='40537''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.parent_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.get_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.get_package_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying ' select package_id from apm_packages where package_key = 'file-storage' limit 1;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): ' select package_id from apm_packages where package_key = 'file-storage' limit 1'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.get_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs::get_root_folder.get_root_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs::get_root_folder.get_root_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select file_storage__get_root_folder('31369');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select file_storage__get_root_folder('31369');
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.file-storage.tcl.file-storage-procs.fs::get_root_folder.get_root_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs::get_folder.select_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select item_id
+            from cr_items
+            where parent_id = '31384'
+            and name = 'projects';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select item_id
+            from cr_items
+            where parent_id = '31384'
+            and name = 'projects'
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.file-storage.tcl.file-storage-procs.fs::get_folder.select_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.project_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.project_name --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select project_name from im_projects where project_id = 40537;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select project_name from im_projects where project_id = 40537'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.project_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.folder_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select item_id from cr_items where name = 'films-pro-0-001' and parent_id = '37341';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select item_id from cr_items where name = 'films-pro-0-001' and parent_id = '37341''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.object-procs.acs_object::package_id_not_cached.get_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+    select package_id
+      from acs_objects
+      where object_id = '37341';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+    select package_id
+      from acs_objects
+      where object_id = '37341'
+   '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.object-procs.acs_object::package_id_not_cached.get_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.apm-procs.apm_package_key_from_id_mem.apm_package_key_from_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      select package_key
+      from apm_packages
+      where package_id = '31369';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      select package_key
+      from apm_packages
+      where package_id = '31369'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.apm-procs.apm_package_key_from_id_mem.apm_package_key_from_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.package_select
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      
+      select t.package_name
+      from acs_object_types t
+      where t.object_type = 'content_folder';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      
+      select t.package_name
+      from acs_object_types t
+      where t.object_type = 'content_folder'
+      
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.package_select
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_plsql_args.select_package_func_param_list
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select args.arg_name
+        from acs_function_args args
+        where args.function = upper('content_folder') || '__' || upper('NEW');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select args.arg_name
+        from acs_function_args args
+        where args.function = upper('content_folder') || '__' || upper('NEW')
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.acs-subsite.tcl.package-procs.package_plsql_args.select_package_func_param_list
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.plpgsql-utility-procs.plpgsql_utility::get_function_args.get_function_args
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      select arg_name, arg_default
+      from acs_function_args
+      where function = upper('content_folder__new')
+      order by arg_seq;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      select arg_name, arg_default
+      from acs_function_args
+      where function = upper('content_folder__new')
+      order by arg_seq
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb2 select dbqd.acs-subsite.tcl.plpgsql-utility-procs.plpgsql_utility::get_function_args.get_function_args
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+
+	select content_folder__new('films-pro-0-001','Films pro 0-001',NULL,'37341',NULL,NULL,'now','624','192.168.99.222','t','31369');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+
+	select content_folder__new('films-pro-0-001','Films pro 0-001',NULL,'37341',NULL,NULL,'now','624','192.168.99.222','t','31369')
+
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.subsite-callback-procs.subsite_callback.select_callbacks
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+
+	select distinct callback, callback_type
+	  from subsite_callbacks
+	 where object_type in (select t2.object_type
+	                         from acs_object_types t1, acs_object_types t2
+	                        where t2.tree_sortkey <= t1.tree_sortkey
+				  and t1.tree_sortkey between t2.tree_sortkey and tree_right(t2.tree_sortkey)
+				  and t1.object_type = 'content_folder')
+	   and event_type = 'insert';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+
+	select distinct callback, callback_type
+	  from subsite_callbacks
+	 where object_type in (select t2.object_type
+	                         from acs_object_types t1, acs_object_types t2
+	                        where t2.tree_sortkey <= t1.tree_sortkey
+				  and t1.tree_sortkey between t2.tree_sortkey and tree_right(t2.tree_sortkey)
+				  and t1.object_type = 'content_folder')
+	   and event_type = 'insert'
+    
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.acs-subsite.tcl.subsite-callback-procs.subsite_callback.select_callbacks
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::grant.grant_permission
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::grant.grant_permission
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+                select acs_permission__grant_permission(
+                    '40558',
+                    '624',
+                    'admin'
+                );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+                select acs_permission__grant_permission(
+                    '40558',
+                    '624',
+                    'admin'
+                );
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::grant.grant_permission
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::set_not_inherit.set_not_inherit
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            update acs_objects
+            set security_inherit_p = 'f'
+            where object_id = '40558';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            update acs_objects
+            set security_inherit_p = 'f'
+            where object_id = '40558'
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 dml dbqd.acs-tcl.tcl.acs-permissions-procs.permission::set_not_inherit.set_not_inherit
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::grant.grant_permission
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::grant.grant_permission
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+                select acs_permission__grant_permission(
+                    '40558',
+                    '624',
+                    'admin'
+                );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+                select acs_permission__grant_permission(
+                    '40558',
+                    '624',
+                    'admin'
+                );
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::grant.grant_permission
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.relation-procs.relation_add.rel_exists
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.acs-subsite.tcl.relation-procs.relation_add.rel_exists --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying ' 
+        select rel_id
+        from   acs_rels 
+        where  rel_type = 'project_folder' 
+        and    object_id_one = '40537'
+        and    object_id_two = '40558';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): ' 
+        select rel_id
+        from   acs_rels 
+        where  rel_type = 'project_folder' 
+        and    object_id_one = '40537'
+        and    object_id_two = '40558'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.relation-procs.relation_add.rel_exists
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'begin transaction;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Ns_PgExec: Entering transaction
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'begin transaction'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.package_select
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      
+      select t.package_name
+      from acs_object_types t
+      where t.object_type = 'project_folder';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      
+      select t.package_name
+      from acs_object_types t
+      where t.object_type = 'project_folder'
+      
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.package_select
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_plsql_args.select_package_func_param_list
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select args.arg_name
+        from acs_function_args args
+        where args.function = upper('project_folder') || '__' || upper('NEW');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select args.arg_name
+        from acs_function_args args
+        where args.function = upper('project_folder') || '__' || upper('NEW')
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.acs-subsite.tcl.package-procs.package_plsql_args.select_package_func_param_list
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.plpgsql-utility-procs.plpgsql_utility::get_function_args.get_function_args
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      select arg_name, arg_default
+      from acs_function_args
+      where function = upper('project_folder__new')
+      order by arg_seq;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      select arg_name, arg_default
+      from acs_function_args
+      where function = upper('project_folder__new')
+      order by arg_seq
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb2 select dbqd.acs-subsite.tcl.plpgsql-utility-procs.plpgsql_utility::get_function_args.get_function_args
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+
+	select project_folder__new(NULL,'40537','40558','project_folder','project_folder','now()','192.168.99.222','now()',NULL,'624',NULL,NULL,NULL,NULL,NULL);'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+
+	select project_folder__new(NULL,'40537','40558','project_folder','project_folder','now()','192.168.99.222','now()',NULL,'624',NULL,NULL,NULL,NULL,NULL)
+
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.subsite-callback-procs.subsite_callback.select_callbacks
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+
+	select distinct callback, callback_type
+	  from subsite_callbacks
+	 where object_type in (select t2.object_type
+	                         from acs_object_types t1, acs_object_types t2
+	                        where t2.tree_sortkey <= t1.tree_sortkey
+				  and t1.tree_sortkey between t2.tree_sortkey and tree_right(t2.tree_sortkey)
+				  and t1.object_type = 'project_folder')
+	   and event_type = 'insert';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+
+	select distinct callback, callback_type
+	  from subsite_callbacks
+	 where object_type in (select t2.object_type
+	                         from acs_object_types t1, acs_object_types t2
+	                        where t2.tree_sortkey <= t1.tree_sortkey
+				  and t1.tree_sortkey between t2.tree_sortkey and tree_right(t2.tree_sortkey)
+				  and t1.object_type = 'project_folder')
+	   and event_type = 'insert'
+    
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.acs-subsite.tcl.subsite-callback-procs.subsite_callback.select_callbacks
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'end transaction;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Ns_PgExec: Committing transaction
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'end transaction'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.project_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.project_name --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select project_name from im_projects where project_id = 40538;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select project_name from im_projects where project_id = 40538'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.project_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.folder_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select item_id from cr_items where name = 'films-task-start' and parent_id = -100;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select item_id from cr_items where name = 'films-task-start' and parent_id = -100'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::create_project_folder.folder_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.relation-procs.relation_add.rel_exists
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.acs-subsite.tcl.relation-procs.relation_add.rel_exists --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying ' 
+        select rel_id
+        from   acs_rels 
+        where  rel_type = 'project_folder' 
+        and    object_id_one = '40538'
+        and    object_id_two = '39787';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): ' 
+        select rel_id
+        from   acs_rels 
+        where  rel_type = 'project_folder' 
+        and    object_id_one = '40538'
+        and    object_id_two = '39787'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.relation-procs.relation_add.rel_exists
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'begin transaction;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Ns_PgExec: Entering transaction
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'begin transaction'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.package_select
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      
+      select t.package_name
+      from acs_object_types t
+      where t.object_type = 'project_folder';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      
+      select t.package_name
+      from acs_object_types t
+      where t.object_type = 'project_folder'
+      
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.package_select
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+
+	select project_folder__new(NULL,'40538','39787','project_folder','project_folder','now()','192.168.99.222','now()',NULL,'624',NULL,NULL,NULL,NULL,NULL);'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+
+	select project_folder__new(NULL,'40538','39787','project_folder','project_folder','now()','192.168.99.222','now()',NULL,'624',NULL,NULL,NULL,NULL,NULL)
+
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-subsite.tcl.package-procs.package_instantiate_object.create_object
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-subsite.tcl.subsite-callback-procs.subsite_callback.select_callbacks
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+
+	select distinct callback, callback_type
+	  from subsite_callbacks
+	 where object_type in (select t2.object_type
+	                         from acs_object_types t1, acs_object_types t2
+	                        where t2.tree_sortkey <= t1.tree_sortkey
+				  and t1.tree_sortkey between t2.tree_sortkey and tree_right(t2.tree_sortkey)
+				  and t1.object_type = 'project_folder')
+	   and event_type = 'insert';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+
+	select distinct callback, callback_type
+	  from subsite_callbacks
+	 where object_type in (select t2.object_type
+	                         from acs_object_types t1, acs_object_types t2
+	                        where t2.tree_sortkey <= t1.tree_sortkey
+				  and t1.tree_sortkey between t2.tree_sortkey and tree_right(t2.tree_sortkey)
+				  and t1.object_type = 'project_folder')
+	   and event_type = 'insert'
+    
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.acs-subsite.tcl.subsite-callback-procs.subsite_callback.select_callbacks
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'end transaction;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Ns_PgExec: Committing transaction
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'end transaction'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_url.object_type_url
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_url.object_type_url --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+    	select	url
+	from	im_biz_object_urls u,
+		acs_objects o
+	where	o.object_id = 40538
+		and o.object_type = u.object_type
+		and u.url_type = 'view';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+    	select	url
+	from	im_biz_object_urls u,
+		acs_objects o
+	where	o.object_id = 40538
+		and o.object_type = u.object_type
+		and u.url_type = 'view'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_url.object_type_url
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_member_p_helper.im_biz_object_member_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_member_p_helper.im_biz_object_member_p --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select count(*)
+	from acs_rels
+	where	object_id_one = '40538'
+		and object_id_two = '624';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select count(*)
+	from acs_rels
+	where	object_id_one = '40538'
+		and object_id_two = '624'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_member_p_helper.im_biz_object_member_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_admin_p_helper.im_biz_object_member_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_admin_p_helper.im_biz_object_member_p --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	count(*)
+	from 
+		acs_rels r,
+		im_biz_object_members m
+	where
+		r.object_id_one='40538'
+		and r.object_id_two='624'
+		and r.rel_id = m.rel_id
+		and m.object_role_id in (1301,1302,1303);'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	count(*)
+	from 
+		acs_rels r,
+		im_biz_object_members m
+	where
+		r.object_id_one='40538'
+		and r.object_id_two='624'
+		and r.rel_id = m.rel_id
+		and m.object_role_id in (1301,1302,1303)
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-biz-object-procs.im_biz_object_admin_p_helper.im_biz_object_member_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_cc
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_cc --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select project_cost_center_id from im_projects where project_id = 40538;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select project_cost_center_id from im_projects where project_id = 40538'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_cc
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_manager
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_manager --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select project_lead_id from im_projects where project_id = '40538';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select project_lead_id from im_projects where project_id = '40538''
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_manager
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_info --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	p.company_id,
+		(select	count(*)
+		from	im_category_hierarchy ch 
+		where	p.project_type_id = 76 OR
+			(ch.child_id = p.project_status_id and ch.parent_id = 76)
+		) as project_is_open_p,
+		p.project_status_id,
+		im_category_from_id(p.project_status_id) as project_status
+	from	im_projects p
+	where	p.project_id = 40538;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	p.company_id,
+		(select	count(*)
+		from	im_category_hierarchy ch 
+		where	p.project_type_id = 76 OR
+			(ch.child_id = p.project_status_id and ch.parent_id = 76)
+		) as project_is_open_p,
+		p.project_status_id,
+		im_category_from_id(p.project_status_id) as project_status
+	from	im_projects p
+	where	p.project_id = 40538
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-project-procs.im_project_permissions.project_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'read' );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'read' )
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'admin' );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'admin' )
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'write' );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'write' )
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'delete' );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '39787' and ppm.party_id = '624' and ppm.privilege = 'delete' )
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_fs_package_id.select_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_fs_package_id.select_package_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select package_id from apm_packages where package_key = 'file-storage';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select package_id from apm_packages where package_key = 'file-storage'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_fs_package_id.select_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs::get_root_folder.get_root_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs::get_root_folder.get_root_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select file_storage__get_root_folder('31369');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select file_storage__get_root_folder('31369');
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.file-storage.tcl.file-storage-procs.fs::get_root_folder.get_root_folder
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs_get_folder_name.folder_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs_get_folder_name.folder_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select file_storage__get_folder_name('31384');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select file_storage__get_folder_name('31384');
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.file-storage.tcl.file-storage-procs.fs_get_folder_name.folder_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_fs_package_id.select_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_fs_package_id.select_package_id --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select package_id from apm_packages where package_key = 'file-storage';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select package_id from apm_packages where package_key = 'file-storage'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.intranet-fs.tcl.intranet-fs-procs.intranet_fs::get_fs_package_id.select_package_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.site-node-object-map-procs.site_node_object_map::get_node_id.select_node_mapping
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select node_id
+            from site_node_object_mappings
+            where object_id = '39787';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select node_id
+            from site_node_object_mappings
+            where object_id = '39787'
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.site-node-object-map-procs.site_node_object_map::get_node_id.select_node_mapping
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs_get_folder_name.folder_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs_get_folder_name.folder_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select file_storage__get_folder_name('39787');'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select file_storage__get_folder_name('39787');
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.file-storage.tcl.file-storage-procs.fs_get_folder_name.folder_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.apm-procs.apm_package_id_from_key_mem.apm_package_id_from_key
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      select package_id
+      from apm_packages
+      where package_key = 'notifications';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      select package_id
+      from apm_packages
+      where package_key = 'notifications'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.apm-procs.apm_package_id_from_key_mem.apm_package_id_from_key
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.apm-procs.apm_package_url_from_id_mem.apm_package_url_from_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      
+	select site_node__url(min(node_id))
+          from site_nodes 
+         where object_id = '21514';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      
+	select site_node__url(min(node_id))
+          from site_nodes 
+         where object_id = '21514'
+    
+      '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.apm-procs.apm_package_url_from_id_mem.apm_package_url_from_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.notifications.tcl.notification-type-procs.notification::type::get_type_id_not_cached.select_type_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select type_id
+            from notification_types
+            where short_name = 'fs_fs_notif';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select type_id
+            from notification_types
+            where short_name = 'fs_fs_notif'
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.notifications.tcl.notification-type-procs.notification::type::get_type_id_not_cached.select_type_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.notifications.tcl.notification-request-procs.notification::request::get_request_id.select_request_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select request_id
+            from notification_requests
+            where type_id = '31340'
+            and user_id = '624'
+            and object_id = '39787';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select request_id
+            from notification_requests
+            where type_id = '31340'
+            and user_id = '624'
+            and object_id = '39787'
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.notifications.tcl.notification-request-procs.notification::request::get_request_id.select_request_id
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '18261' and ppm.party_id = '624' and ppm.privilege = 'admin' );'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+		select 1 from dual
+		where exists
+	        	( select 1
+                	from acs_object_party_privilege_map ppm
+	  		where ppm.object_id = '18261' and ppm.party_id = '624' and ppm.privilege = 'admin' )
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.acs-tcl.tcl.acs-permissions-procs.permission::permission_p_not_cached.select_permission_p
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs::get_object_name.select_object_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+            select name
+            from fs_objects
+            where object_id = '39787';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+            select name
+            from fs_objects
+            where object_id = '39787'
+        '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.file-storage.tcl.file-storage-procs.fs::get_object_name.select_object_name
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.file-storage.tcl.file-storage-procs.fs::get_folder_package_and_root.select_package_and_root
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+      select r.package_id,
+             r.folder_id as root_folder_id
+      from fs_root_folders r,
+           (select parent.item_id as folder_id
+            from cr_items parent,
+                 cr_items children
+            where children.item_id = '39787'
+              and children.tree_sortkey
+                between parent.tree_sortkey
+                and tree_right(parent.tree_sortkey)) t
+      where r.folder_id = t.folder_id;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+      select r.package_id,
+             r.folder_id as root_folder_id
+      from fs_root_folders r,
+           (select parent.item_id as folder_id
+            from cr_items parent,
+                 cr_items children
+            where children.item_id = '39787'
+              and children.tree_sortkey
+                between parent.tree_sortkey
+                and tree_right(parent.tree_sortkey)) t
+      where r.folder_id = t.folder_id
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.file-storage.tcl.file-storage-procs.fs::get_folder_package_and_root.select_package_and_root
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Error: Error in include template "/web/projop/packages/intranet-fs/lib/folder-chunk": Query did not return any rows.
+Query did not return any rows.
+    while executing
+"db_1row select_package_and_root {}"
+    (procedure "fs::get_folder_package_and_root" line 3)
+    invoked from within
+"fs::get_folder_package_and_root $folder_id"
+    ("uplevel" body line 67)
+    invoked from within
+"uplevel {
+# intranet-fs/lib/folder-chunk.tcl
+
+ad_page_contract {
+    @author yon (yon@openforce.net)
+    @creation-date Feb 22, 2002
+    @cvs-id $Id: ..."
+    (procedure "code::tcl::/web/projop/packages/intranet-fs/lib/folder-chunk" line 2)
+    invoked from within
+"code::tcl::$__adp_stub"
+    ("uplevel" body line 12)
+    invoked from within
+"uplevel {
+
+    if { [file exists $__adp_stub.tcl] } {
+
+      # ensure that data source preparation procedure exists and is up-to-date
+      adp_init t..."
+    (procedure "adp_prepare" line 2)
+    invoked from within
+"adp_prepare"
+    invoked from within
+"template::adp_parse [template::util::url_to_file "[ad_quotehtml [lang::util::localize ${scope_fs_url}]]" "$__adp_stub"] [list folder_id "[ad_quotehtml..."
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-component-procs.im_component_box.component_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-component-procs.im_component_box.component_info --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select
+		c.plugin_id,
+		c.plugin_name,
+		c.component_tcl,
+		c.title_tcl,
+		m.minimized_p,
+		coalesce(m.sort_order, c.sort_order) as sort_order,
+		coalesce(m.location, c.location) as location
+	from
+		im_component_plugins c
+		left outer join (
+			select  *
+			from    im_component_plugin_user_map
+			where   user_id = '624'
+		) m on (c.plugin_id = m.plugin_id)
+	where
+		c.plugin_id = '37333';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select
+		c.plugin_id,
+		c.plugin_name,
+		c.component_tcl,
+		c.title_tcl,
+		m.minimized_p,
+		coalesce(m.sort_order, c.sort_order) as sort_order,
+		coalesce(m.location, c.location) as location
+	from
+		im_component_plugins c
+		left outer join (
+			select  *
+			from    im_component_plugin_user_map
+			where   user_id = '624'
+		) m on (c.plugin_id = m.plugin_id)
+	where
+		c.plugin_id = '37333'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-component-procs.im_component_box.component_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.otype
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.otype --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select object_type from acs_objects where object_id=40538;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select object_type from acs_objects where object_id=40538'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.otype
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.users_in_group
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.users_in_group --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select
+		rels.object_id_two as user_id, 
+		rels.object_id_two as party_id, 
+		im_email_from_user_id(rels.object_id_two) as email,
+		im_name_from_user_id(rels.object_id_two, 1) as name,
+		im_category_from_id(c.category_id) as member_role,
+		c.category_gif as role_gif,
+		c.category_description as role_description
+		,round(bo_rels.percentage) as percentage
+	from
+		acs_rels rels
+		LEFT OUTER JOIN im_biz_object_members bo_rels ON (rels.rel_id = bo_rels.rel_id)
+		LEFT OUTER JOIN im_categories c ON (c.category_id = bo_rels.object_role_id)
+	where
+		rels.object_id_one = '40538' and
+		rels.object_id_two in (select party_id from parties) and
+		rels.object_id_two not in (
+			-- Exclude banned or deleted users
+			select	m.member_id
+			from	group_member_map m,
+				membership_rels mr
+			where	m.rel_id = mr.rel_id and
+				m.group_id = acs__magic_object_id('registered_users') and
+				m.container_id = m.group_id and
+				mr.member_state != 'approved'
+		)
+		 
+		
+	order by 
+		name;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select
+		rels.object_id_two as user_id, 
+		rels.object_id_two as party_id, 
+		im_email_from_user_id(rels.object_id_two) as email,
+		im_name_from_user_id(rels.object_id_two, 1) as name,
+		im_category_from_id(c.category_id) as member_role,
+		c.category_gif as role_gif,
+		c.category_description as role_description
+		,round(bo_rels.percentage) as percentage
+	from
+		acs_rels rels
+		LEFT OUTER JOIN im_biz_object_members bo_rels ON (rels.rel_id = bo_rels.rel_id)
+		LEFT OUTER JOIN im_categories c ON (c.category_id = bo_rels.object_role_id)
+	where
+		rels.object_id_one = '40538' and
+		rels.object_id_two in (select party_id from parties) and
+		rels.object_id_two not in (
+			-- Exclude banned or deleted users
+			select	m.member_id
+			from	group_member_map m,
+				membership_rels mr
+			where	m.rel_id = mr.rel_id and
+				m.group_id = acs__magic_object_id('registered_users') and
+				m.container_id = m.group_id and
+				mr.member_state != 'approved'
+		)
+		 
+		
+	order by 
+		name	
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 select dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.users_in_group
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.s
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.s --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying 'select cell_phone from users_contact where user_id=624;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): 'select cell_phone from users_contact where user_id=624'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb2 0or1row dbqd.intranet-core.tcl.intranet-biz-object-procs.im_group_member_component.s
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-component-procs.im_component_box.component_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-component-procs.im_component_box.component_info --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select
+		c.plugin_id,
+		c.plugin_name,
+		c.component_tcl,
+		c.title_tcl,
+		m.minimized_p,
+		coalesce(m.sort_order, c.sort_order) as sort_order,
+		coalesce(m.location, c.location) as location
+	from
+		im_component_plugins c
+		left outer join (
+			select  *
+			from    im_component_plugin_user_map
+			where   user_id = '624'
+		) m on (c.plugin_id = m.plugin_id)
+	where
+		c.plugin_id = '26347';'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select
+		c.plugin_id,
+		c.plugin_name,
+		c.component_tcl,
+		c.title_tcl,
+		m.minimized_p,
+		coalesce(m.sort_order, c.sort_order) as sort_order,
+		coalesce(m.location, c.location) as location
+	from
+		im_component_plugins c
+		left outer join (
+			select  *
+			from    im_component_plugin_user_map
+			where   user_id = '624'
+		) m on (c.plugin_id = m.plugin_id)
+	where
+		c.plugin_id = '26347'
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb1 0or1row dbqd.intranet-core.tcl.intranet-component-procs.im_component_box.component_info
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_qd_replace_sql: dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: NO FULLQUERY FOR dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins --> using default SQL
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: Querying '
+	select	*
+	from (
+		select	c.plugin_id,
+			c.plugin_name,
+			c.component_tcl,
+			c.title_tcl,
+			coalesce(m.sort_order, c.sort_order) as sort_order,
+			coalesce(m.location, c.location) as location,
+			im_object_permission_p(c.plugin_id, '624', 'read') as perm
+		from	im_component_plugins c
+			left outer join
+			    (	select	* 
+				from	im_component_plugin_user_map 
+				where	user_id = '624'
+			    ) m
+			    on (c.plugin_id = m.plugin_id)
+		where
+			c.page_url = '/intranet-timesheet2-tasks/new'
+			and (c.enabled_p is null OR c.enabled_p = 't')
+			and (view_name is null or view_name = NULL)
+	    ) p
+	where	
+		location = 'bottom'
+	order by 
+		sort_order;'
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: dbinit: sql(localhost::projop): '
+	select	*
+	from (
+		select	c.plugin_id,
+			c.plugin_name,
+			c.component_tcl,
+			c.title_tcl,
+			coalesce(m.sort_order, c.sort_order) as sort_order,
+			coalesce(m.location, c.location) as location,
+			im_object_permission_p(c.plugin_id, '624', 'read') as perm
+		from	im_component_plugins c
+			left outer join
+			    (	select	* 
+				from	im_component_plugin_user_map 
+				where	user_id = '624'
+			    ) m
+			    on (c.plugin_id = m.plugin_id)
+		where
+			c.page_url = '/intranet-timesheet2-tasks/new'
+			and (c.enabled_p is null OR c.enabled_p = 't')
+			and (view_name is null or view_name = NULL)
+	    ) p
+	where	
+		location = 'bottom'
+	order by 
+		sort_order
+    '
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Debug: db_exec: timing 0 seconds nsdb0 select dbqd.intranet-core.tcl.intranet-component-procs.im_component_bay.get_plugins
+[12/Mar/2013:12:30:07][1793.2788891504][-default:211-] Notice: exiting: exceeded max connections per thread
