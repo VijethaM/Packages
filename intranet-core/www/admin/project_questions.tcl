@@ -21,7 +21,7 @@ ad_page_contract {
     @param return_url Return URL
     @author nikhil.arpally@venkatmangudi.com
 } {
-    {project_id 0}
+    {task_id 0}
     {save1 ""}
     { taskset:multiple "" }
     {ans:array "" }
@@ -48,7 +48,9 @@ set count 1
 #---------------------------------------------------------------------------------------------------------
 #Geting Project Type And Related Questions
 #---------------------------------------------------------------------------------------------------------
-set project_type_id [db_string ad "select project_type_id from im_projects where project_id=$project_id" -default 0]
+set task_name [db_string  as "select project_name from im_projects where project_id=$task_id"]
+#set project_id [db_string as "select parent_id from "]
+set project_type_id [db_string ad "select category_id from im_categories where category=:task_name" -default 0]
 #ad_return_complaint 1 "$project_type_id $project_id"
 set questions_sql "
 	select 
@@ -63,7 +65,7 @@ if {$save1=="Apply"} {
 #ad_return_complaint 1 "Hi ur in save block"
 #ad_return_complaint 1 "$taskset"
 foreach question_no $taskset {
-	set is_answerd [db_string as "select count(*) from im_vmc_project_answers where project_id=$project_id and question_no=$question_no" -default 0]
+	set is_answerd [db_string as "select count(*) from im_vmc_project_answers where project_id=$task_id and question_no=$question_no" -default 0]
 	set answer_by $user_id
 	 set answer "$ans($question_no)"
 	if {$is_answerd<=0} {
@@ -87,7 +89,7 @@ foreach question_no $taskset {
 				answer=:answer,
 				answerd_by =:answer_by
 			where
-				project_id=$project_id
+				project_id=$task_id
 				and question_no =$question_no
 
 		"
@@ -103,7 +105,7 @@ append page_body "<form name=project-ans id=project-ans method=post><table borde
 			
                     </tr>"
 db_foreach question $questions_sql {
-set answer [db_string as "select answer from im_vmc_project_answers where project_id=$project_id and question_no=$question_no" -default ""]
+set answer [db_string as "select answer from im_vmc_project_answers where project_id=$task_id and question_no=$question_no" -default ""]
 #ad_return_complaint 1 "$answer $project_id $question_no" 
 append page_body "
 		<tr>
@@ -118,7 +120,7 @@ append page_body "
 incr count
 }
 append page_body "<td colspan=3 align=right >
-	<input type=hidden name=project_id value=$project_id />
+	<input type=hidden name=task_id value=$task_id />
 	 <input type=submit value=Apply name=save1></tr></table></form>
 	"
 

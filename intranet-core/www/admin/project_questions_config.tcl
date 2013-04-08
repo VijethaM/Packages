@@ -99,23 +99,30 @@ set count 0
 #---------------------------------------------------------------------------------------------------------
 #Getting Types of Documents
 #---------------------------------------------------------------------------------------------------------
-set proj_type_ids [db_list_of_lists tt "select 
-     
-                  c.category_id as project_type_id
-              from 
-                  im_categories c
-                 
-              where 
-                  c.category_type='Intranet Project Type'  and c.enabled_p='t'" ]
+set proj_type_ids  " select im_category_from_id(child_id) as task_name, 
+                            child_id as task_name_id, im_category_from_id(parent_id) as parent
+                        from 
+                            im_category_hierarchy 
+                        where 
+                            parent_id in(select category_id 
+                                        from 
+                                                im_categories 
+                                        where 
+                                                category in (select category 
+                                                            from 
+                                                                im_categories 
+                                                            where 
+                                                                category_type='Intranet Project Type') 
+and category_type='Intranet Project Task Types') 
+                        order by parent_id,child_id" 
                  
 set doc_types [list "" "---Please Select---"]
 
 #---------------------------------------------------------------------------------------------------------
 # Adding all doument list into dropdown list
 #---------------------------------------------------------------------------------------------------------
-foreach type_id $proj_type_ids {
-  set type_name [db_string tsk_ty "select category from im_categories where category_id = :type_id" -default ""]
-  lappend doc_types "$type_id" "$type_name"
+db_foreach type_id $proj_type_ids {
+ lappend doc_types "$task_name_id" "$task_name---$parent"
 #ad_return_complaint 1 "$doc_id      $document_name"
 }
 
